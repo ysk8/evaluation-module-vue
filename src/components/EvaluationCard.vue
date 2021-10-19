@@ -5,10 +5,12 @@
     <v-card-text class="mt-n5"
       >{{ evaluation.amountOfQuestions }} Questions
     </v-card-text>
-    <v-card-actions class="mt-n2">
+    <v-card-actions class="mt-n2 ma-2">
       <v-btn
         color="deep-purple lighten-3"
+        elevation="0"
         dark
+        block
         @click="startTest(evaluation.id)"
       >
         Start Test
@@ -18,6 +20,7 @@
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
   name: "EvaluationCard",
   props: {
@@ -27,8 +30,14 @@ export default {
   },
   data: () => ({}),
   methods: {
+    ...mapActions(["setEvaluationSelected"]),
     startTest(id) {
       console.log("START TEST", id);
+      this.setEvaluationSelected(this.evaluation);
+      this.$router.push({
+        name: "Evaluation",
+        params: { id, name: this.evaluation.name, img: this.evaluation.img },
+      });
     },
   },
 };

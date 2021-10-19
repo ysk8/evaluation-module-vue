@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Evaluations from "../views/Evaluations.vue";
+import Evaluation from "../views/Evaluation.vue";
 
 Vue.use(VueRouter);
 
@@ -9,6 +10,11 @@ const routes = [
     path: "/",
     name: "Evaluations",
     component: Evaluations,
+  },
+  {
+    path: "/evaluation/:id",
+    name: "Evaluation",
+    component: Evaluation,
   },
   // {
   //   path: "/about",
