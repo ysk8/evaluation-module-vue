@@ -1,12 +1,15 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/21b4d5f0-5826-4f96-971a-d4f71c063940/deploy-status)](https://app.netlify.com/sites/gallant-stonebraker-7c2058/deploys)
+# 📝 Evaluation Module
 
-## URL Netlify
-See [demo](https://evaluation-module-vue.netlify.app)
+You can find a demo for a evaluation module that is using an local API to get the Evaluation and its respective questions. Each evaluation must have a minimum of five questions and each question has four option with an only one solution.
 
-## URL Render
-See [demo](https://evaluation-module-vue.onrender.com)
-
-# evaluation-module
+At the end of the evaluation, when the system detect that all the questions in the evaluation have an option of answer selected, this will allow to submit to process the answers and then will show how many answers were right and how many were wrong.
+## 🌎 URL Render
+See <a href="https://evaluation-module-vue.onrender.com" target="_blank">Evaluation Module DEMO</a>
+### 🖼 Screen Shots
+<img src="https://ysk8.net/images/emPM-1.jpg" alt="Image of EvaMax2600 demo" width="390"/>
+<img src="https://ysk8.net/images/emPM-2.jpg" alt="Image of EvaMax2600 demo" width="390"/>
+<img src="https://ysk8.net/images/emPM-3.jpg" alt="Image of EvaMax2600 demo" width="390"/>
+<img src="https://ysk8.net/images/emPM-4.jpg" alt="Image of EvaMax2600 demo" width="390"/>
 
 ## Project setup
 ```
@@ -29,4 +32,4 @@ npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See <a href="https://cli.vuejs.org/config/" target="_blank">Configuration Reference</a>
